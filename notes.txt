@@ -749,3 +749,597 @@ Ak.html
 
 admin@DESKTOP-BIM9GHR MINGW64 /D/git/adv (master)
 $
+
+admin@DESKTOP-BIM9GHR MINGW64 /
+$ git --version
+git version 2.42.0.windows.2
+
+admin@DESKTOP-BIM9GHR MINGW64 /
+$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <type>     value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+admin@DESKTOP-BIM9GHR MINGW64 /
+$ git config --global user.name "Ashok"
+
+admin@DESKTOP-BIM9GHR MINGW64 /
+$ git config --global user.email "ashokkannan.krishnamoorthy@bonbloc.com"
+
+admin@DESKTOP-BIM9GHR MINGW64 /
+$ ls
+LICENSE.txt        dev/           mingw64/                        unins000.dat
+ReleaseNotes.html  etc/           mintty.2023-09-26_14-47-31.png  unins000.exe*
+bin/               git-bash.exe*  proc/                           unins000.msg
+cmd/               git-cmd.exe*   tmp/                            usr/
+
+admin@DESKTOP-BIM9GHR MINGW64 /
+$ cd
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+'OneDrive - bonbloc.com'/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+'VirtualBox VMs'/
+ bonbloc.sql
+ html
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ sample/
+ sample.sql
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ cd ..
+
+admin@DESKTOP-BIM9GHR MINGW64 /c/Users
+$ cd ..
+
+admin@DESKTOP-BIM9GHR MINGW64 /c
+$ ls
+'$Recycle.Bin'/             OneDriveTemp/          'System Volume Information'/
+'$WinREAgent'/              PerfLogs/               Users/
+ ADE/                      'Program Files'/         Windows/
+ Config.Msi/               'Program Files (x86)'/   app/
+'Documents and Settings'@   ProgramData/            hiberfil.sys
+ DumpStack.log.tmp          Python311/              pagefile.sys
+ Intel/                     Recovery/               swapfile.sys
+
+admin@DESKTOP-BIM9GHR MINGW64 /c
+$ D:
+bash: D:: command not found
+
+admin@DESKTOP-BIM9GHR MINGW64 /c
+$ cd D:
+
+admin@DESKTOP-BIM9GHR MINGW64 /d
+$ ls
+'$RECYCLE.BIN'/   Evaluations/   Linux/                        git/
+ Angular/         Figma/         Sql/                          putty/
+ Applications/   'Html css'/    'Study videos'/
+ Config.Msi/      Javascript/   'System Volume Information'/
+
+admin@DESKTOP-BIM9GHR MINGW64 /d
+$ cd git
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git
+$ l
+bash: l: command not found
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git
+$ ls
+adv/  essentials/  sample/  test/
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git
+$ cd sample
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample
+$ ls
+sample/
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample
+$ cd sample
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ ls
+example.txt  notes.txt  sample.txt  sample1.txt  sample2.txt  sample3.txt
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git status
+On branch master
+Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   notes.txt
+        modified:   sample2.txt
+
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git push
+To https://github.com/iamAshokrishna/sample.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/iamAshokrishna/sample.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git commit -m "This two files are added"
+[master a9228ed] This two files are added
+ 2 files changed, 752 insertions(+)
+ create mode 100644 notes.txt
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+nothing to commit, working tree clean
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git commit log
+error: pathspec 'log' did not match any file(s) known to git
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git log
+commit a9228ed405f1726c59989da47205bc789aee814f (HEAD -> master)
+Author: Ashok <ashokkannan.krishnamoorthy@bonbloc.com>
+Date:   Fri Sep 29 10:44:16 2023 +0530
+
+    This two files are added
+
+commit 097fa145a914d25200d16e190852f037cc39baff
+Author: iamAshokrishna <102459644+iamAshokrishna@users.noreply.github.com>
+Date:   Tue Sep 26 13:59:14 2023 +0530
+
+    example file is created
+
+commit 1357c5abc7cf918fc595e68d8dd54a2f22604688
+Author: Ashok <iamashokrishna@gmail.com>
+Date:   Tue Sep 26 13:56:03 2023 +0530
+
+    Delete sample4.txt
+
+commit c2e681ce1bae35d6abfd61054a325bffb138dc69
+Author: Ashok <iamashokrishna@gmail.com>
+Date:   Tue Sep 26 12:47:41 2023 +0530
+
+    sample4.txt fourth file is added
+
+commit 26abe5cb1b3b186a818ebeb29eaca49db928c4ea
+Author: iamAshokrishna <102459644+iamAshokrishna@users.noreply.github.com>
+Date:   Tue Sep 26 12:26:22 2023 +0530
+
+    Files Added
+
+commit 6a839f10e11ea382a1e493ba64d05f8d4977cb55
+Author: Ashok <iamashokkrishna@gmail.com>
+Date:   Sat Sep 23 17:28:28 2023 +0530
+
+    commitment is done
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git branch --d new
+error: branch 'new' not found.
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git branch
+* master
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git branch new
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git branch
+* master
+  new
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git checkout new
+Switched to branch 'new'
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (new)
+$ git branch
+  master
+* new
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (new)
+$ git status
+On branch new
+nothing to commit, working tree clean
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (new)
+$ git checkout master
+Switched to branch 'master'
+Your branch and 'origin/master' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git pull
+Auto-merging sample2.txt
+CONFLICT (content): Merge conflict in sample2.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master|MERGING)
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   sample2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master|MERGING)
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   sample2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master|MERGING)
+$ git branch
+* master
+  new
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master|MERGING)
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   sample2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master|MERGING)
+$  git add .
+warning: in the working copy of 'sample2.txt', LF will be replaced by CRLF the next time Git touches it
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master|MERGING)
+$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   sample2.txt
+
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master|MERGING)
+$ git commit -m "changes made"
+[master 89ee45f] changes made
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ ls
+example.txt  notes.txt  sample.txt  sample1.txt  sample2.txt  sample3.txt
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git add notes.txt
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git commit -m "File is added"
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ ls
+example.txt  notes.txt  sample.txt  sample1.txt  sample2.txt  sample3.txt
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ ^C
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git push
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 3.85 KiB | 1.92 MiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/iamAshokrishna/sample.git
+   e856684..89ee45f  master -> master
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git pull
+Already up to date.
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 700 bytes | 18.00 KiB/s, done.
+From https://github.com/iamAshokrishna/sample
+   89ee45f..2c98bf9  master     -> origin/master
+Updating 89ee45f..2c98bf9
+Fast-forward
+ example.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git commit -am "another changes made"
+[master 267b77b] another changes made
+ 1 file changed, 1 insertion(+)
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 694 bytes | 40.00 KiB/s, done.
+From https://github.com/iamAshokrishna/sample
+   2c98bf9..991f30a  master     -> origin/master
+Auto-merging example.txt
+CONFLICT (content): Merge conflict in example.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master|MERGING)
+$ .code
+bash: .code: command not found
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master|MERGING)
+$ git comit -am "issue solved"
+git: 'comit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master|MERGING)
+$ git commit -am "issue solved"
+[master aa9ffb0] issue solved
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 622 bytes | 622.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/iamAshokrishna/sample.git
+   991f30a..aa9ffb0  master -> master
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ .vscode
+bash: .vscode: command not found
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ .vs
+bash: .vs: command not found
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git branch
+* master
+  new
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git checkout same
+error: pathspec 'same' did not match any file(s) known to git
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git checkout -b same
+Switched to a new branch 'same'
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (same)
+$ git checkout master -b sample
+Switched to a new branch 'sample'
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (sample)
+$ git status
+On branch sample
+nothing to commit, working tree clean
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (sample)
+$ git branch
+  master
+  new
+  same
+* sample
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (sample)
+$  git push
+fatal: The current branch sample has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin sample
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (sample)
+$ git push --set-upstream origin sample
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'sample' on GitHub by visiting:
+remote:      https://github.com/iamAshokrishna/sample/pull/new/sample
+remote:
+To https://github.com/iamAshokrishna/sample.git
+ * [new branch]      sample -> sample
+branch 'sample' set up to track 'origin/sample'.
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (sample)
+$ git push
+Everything up-to-date
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (sample)
+$ git push --set-upstream origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (sample)
+$ git branch
+  master
+  new
+  same
+* sample
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (sample)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git push same
+fatal: 'same' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git push .
+Everything up-to-date
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$ git checkout same
+Switched to branch 'same'
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (same)
+$ git add --all
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (same)
+$ git checkout manster
+error: pathspec 'manster' did not match any file(s) known to git
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (same)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+admin@DESKTOP-BIM9GHR MINGW64 /d/git/sample/sample (master)
+$
