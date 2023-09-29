@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 The changes has been made :)
+=======
+This file has been changed :)
+>>>>>>> e85668473cf92bb0f6f8a919a3738df8247f6041
