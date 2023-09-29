@@ -1,0 +1,751 @@
+
+admin@DESKTOP-BIM9GHR MINGW64 /
+$ cd D:\git\sample
+bash: cd: D:gitsample: No such file or directory
+
+admin@DESKTOP-BIM9GHR MINGW64 /
+$ cd admin
+bash: cd: admin: No such file or directory
+
+admin@DESKTOP-BIM9GHR MINGW64 /
+$ cd..
+bash: cd..: command not found
+
+admin@DESKTOP-BIM9GHR MINGW64 /
+$ cd
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ pwd
+/c/Users/admin
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ version
+bash: version: command not found
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ git -version
+unknown option: -version
+usage: git [-v | --version] [-h | --help] [-C <path>] [
+           [--exec-path[=<path>]] [--html-path] [--man-
+           [-p | --paginate | -P | --no-pager] [--no-re
+           [--git-dir=<path>] [--work-tree=<path>] [--n
+           [--config-env=<name>=<envvar>] <command> [<a
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ git --version
+git version 2.42.0.windows.2
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ cd..
+bash: cd..: command not found
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ cd
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ pwd
+/c/Users/admin
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ git config --global user.name "Ashok"
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ git config --global user.email 'iamashokrishna@gmail.
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ git list
+git: 'list' is not a git command. See 'git --help'.
+
+The most similar commands are
+        bisect
+        rev-list
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=D:/git/essentials/Git/mingw64/etc/ssl/ce
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.username=Ak-git
+user.name=Ashok
+user.email=iamashokrishna@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/iamAshokrishna/sam
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ cd.
+bash: cd.: command not found
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ cd
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ pwd
+/c/Users/admin
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ cd c/
+bash: cd: c/: No such file or directory
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ cd d
+bash: cd: d: No such file or directory
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ cd ..
+
+admin@DESKTOP-BIM9GHR MINGW64 /c/Users
+$ pwd
+/c/Users
+
+admin@DESKTOP-BIM9GHR MINGW64 /c/Users
+$ cd ..
+
+admin@DESKTOP-BIM9GHR MINGW64 /c
+$ cd ..
+
+admin@DESKTOP-BIM9GHR MINGW64 /
+$ pwd
+/
+
+admin@DESKTOP-BIM9GHR MINGW64 /
+$ cd D
+
+admin@DESKTOP-BIM9GHR MINGW64 /D
+$ ls
+'$RECYCLE.BIN'/   Evaluations/  'Html css'/    Linux/
+ Applications/    Figma/         Javascript/   Sql/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D
+$ cd git/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git
+$ ls
+essentials/  sample/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git
+$ cd sample
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample
+$ ls | pwd
+/D/git/sample
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample
+$ git clone https://github.com/iamAshokrishna/sample.gi
+Cloning into 'sample'...
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 8 (delta 0), reused 3 (delta 0), pack-reu
+Receiving objects: 100% (8/8), done.
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample
+$ ls
+sample/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample
+$ cd sample
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas
+$ ls
+sample.txt  sample1.txt  sample2.txt  sample3.txt
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas
+$ ls
+sample.txt  sample1.txt  sample2.txt  sample3.txt  samp
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be c
+        sample4.txt
+
+nothing added to commit but untracked files present (us
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas
+$ git add sample4.txt
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   sample4.txt
+
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas
+$ git commit -m "sample4.txt fourth file is added"
+[master c2e681c] sample4.txt fourth file is added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sample4.txt
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas
+$ git push origin
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 302 bytes | 302.00 KiB/s,
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1
+To https://github.com/iamAshokrishna/sample.git
+   26abe5c..c2e681c  master -> master
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas
+$  ^C
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be c
+        notes.txt
+
+nothing added to commit but untracked files present (us
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas
+$ pwd
+/D/git/sample/sample
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas
+$ cd ..
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample
+$ ls
+sample/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample
+$ cd ..
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git
+$ ls
+essentials/  sample/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git
+$ mkdir test
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git
+$ ls
+essentials/  sample/  test/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git
+$ cd test
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test
+$ ls
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test
+$ git clone https://github.com/iamAshokrishna/studies.g
+Cloning into 'studies'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reu 0
+Receiving objects: 100% (3/3), done.
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test
+$ ls
+studies/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test
+$ cd
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.bl
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMCon
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMCon
+ NetHood@
+ OneDrive/
+'OneDrive - bonbloc.com'/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+'VirtualBox VMs'/
+ bonbloc.sql
+ html
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ sample/
+ sample.sql
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ cd ..
+
+admin@DESKTOP-BIM9GHR MINGW64 /c/Users
+$ cd ..
+
+admin@DESKTOP-BIM9GHR MINGW64 /c
+$ cd ..
+
+admin@DESKTOP-BIM9GHR MINGW64 /
+$ ls
+LICENSE.txt        bin/  dev/  git-bash.exe*  mingw64/
+ReleaseNotes.html  cmd/  etc/  git-cmd.exe*   proc/
+
+admin@DESKTOP-BIM9GHR MINGW64 /
+$ cd
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ cd D/
+bash: cd: D/: No such file or directory
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ cd D
+bash: cd: D: No such file or directory
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ pwd
+/c/Users/admin
+
+admin@DESKTOP-BIM9GHR MINGW64 ~ (master)
+$ cd ..
+
+admin@DESKTOP-BIM9GHR MINGW64 /c/Users
+$ cd ..
+
+admin@DESKTOP-BIM9GHR MINGW64 /c
+$ pwd
+/c
+
+admin@DESKTOP-BIM9GHR MINGW64 /c
+$ cd ..
+
+admin@DESKTOP-BIM9GHR MINGW64 /
+$ cd D
+
+admin@DESKTOP-BIM9GHR MINGW64 /D
+$ ls
+'$RECYCLE.BIN'/   Evaluations/  'Html css'/    Linux/
+ Applications/    Figma/         Javascript/   Sql/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D
+$ cd git/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git
+$ ls
+essentials/  sample/  test/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git
+$ cd test/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test
+$ ls
+studies/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test
+$ cd studies/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test/studies (main
+$ ls
+base.txt
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test/studies (main
+$ cd ..
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test
+$ ls
+studies/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test
+$ ls
+studies/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test
+$ cd ..
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git
+$ ls
+essentials/  sample/  test/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git
+$ pwd
+/D/git
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git
+$ ls
+essentials/  sample/  test/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git
+$ la
+bash: la: command not found
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git
+$ ls
+essentials/  sample/  test/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git
+$ cd test
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test
+$ ls
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test
+$ ls
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test
+$ git clone https://github.com/iamAshokrishna/studies.g
+Cloning into 'studies'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reu
+Receiving objects: 100% (6/6), done.
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test
+$ ls
+studies/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test
+$ cd studies
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test/studies (main
+$ ls
+base.txt
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test/studies (main
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be c
+        new.txt
+
+nothing added to commit but untracked files present (us
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test/studies (main
+$ git added new.txt origin
+git: 'added' is not a git command. See 'git --help'.
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test/studies (main
+$ git added new.txt
+git: 'added' is not a git command. See 'git --help'.
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test/studies (main
+$ git add new.txt
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test/studies (main
+$ git push new.txt
+fatal: invalid gitfile format: new.txt
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test/studies (main
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   new.txt
+
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test/studies (main
+$ git commit -m "New file is Added"
+[main 8f78d76] New file is Added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 new.txt
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test/studies (main
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test/studies (main
+$ git push origin
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 290 bytes | 290.00 KiB/s,
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/iamAshokrishna/studies.git
+   b89b5af..8f78d76  main -> main
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test/studies (main
+$ cd ..
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test
+$ ls
+studies/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/test
+$ cd ..
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git
+$ ls
+essentials/  sample/  test/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git
+$ cd sample/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample
+$ ls
+sample/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample
+$ cd sample/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas)
+$ ls
+notes.txt   sample1.txt  sample3.txt
+sample.txt  sample2.txt  sample4.txt
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be cotted)
+  (use "git restore <file>..." to discard changes in wong directory)
+        deleted:    sample4.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be citted)
+        notes.txt
+
+no changes added to commit (use "git add" and/or "git cit -a")
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas)
+$ git add sample4.txt
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas)
+$ git commit -m "Delete sample4.txt
+>
+> "
+[master 1357c5a] Delete sample4.txt
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 sample4.txt
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas)
+$ git push origin
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 226 bytes | 226.00 KiB/s, e.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 al object.
+To https://github.com/iamAshokrishna/sample.git
+   c2e681c..1357c5a  master -> master
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas)
+$ git pull
+Already up to date.
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reu 0
+Unpacking objects: 100% (3/3), 680 bytes | 16.00 KiB/s,ne.
+From https://github.com/iamAshokrishna/sample
+   1357c5a..097fa14  master     -> origin/master
+Updating 1357c5a..097fa14
+Fast-forward
+ example.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 example.txt
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas)
+$ git pull
+Already up to date.
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas)
+$ git pull
+Already up to date.
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas)
+$ ls
+example.txt  sample.txt   sample2.txt
+notes.txt    sample1.txt  sample3.txt
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reu 0
+Unpacking objects: 100% (3/3), 668 bytes | 47.00 KiB/s,ne.
+From https://github.com/iamAshokrishna/sample
+   097fa14..a5bf201  master     -> origin/master
+error: Your local changes to the following files would overwritten by merge:
+        sample2.txt
+Please commit your changes or stash them before you mer
+Aborting
+Updating 097fa14..a5bf201
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reu 0
+Unpacking objects: 100% (3/3), 672 bytes | 84.00 KiB/s,ne.
+From https://github.com/iamAshokrishna/sample
+   a5bf201..e856684  master     -> origin/master
+error: Your local changes to the following files would overwritten by merge:
+        sample2.txt
+Please commit your changes or stash them before you mer
+Aborting
+Updating 097fa14..e856684
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample/sample (mas)
+$ cd ..
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample
+$ ls
+sample/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/sample
+$ cd ..
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git
+$ ls
+adv/  essentials/  sample/  test/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git
+$ ls
+adv/  essentials/  sample/  test/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git
+$ cd adv
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/adv
+$ ls
+evaluvation.html
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/adv
+$ git init
+Initialized empty Git repository in D:/git/adv/.git/
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/adv (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be citted)
+        evaluvation.html
+
+nothing added to commit but untracked files present (usgit add" to track)
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/adv (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be citted)
+        Ak.html
+
+nothing added to commit but untracked files present (usgit add" to track)
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/adv (master)
+$ git add Ak.html
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/adv (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Ak.html
+
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/adv (master)
+$ git commit -m "file added"
+[master (root-commit) df22c95] file added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Ak.html
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/adv (master)
+$ git branch
+* master
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/adv (master)
+$ git checkout master
+Already on 'master'
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/adv (master)
+$ git add --all
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/adv (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/adv (master)
+$ ls
+Ak.html
+
+admin@DESKTOP-BIM9GHR MINGW64 /D/git/adv (master)
+$
